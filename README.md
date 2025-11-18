@@ -102,5 +102,4 @@ Evaluated using:
 
 * Deploy the model using Flask/Streamlit
 * Add more features (e.g., temperature, driving style)
-* Train using more ML algorithms for comparison
 * Convert to a REST API
