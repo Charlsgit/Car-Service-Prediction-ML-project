@@ -26,7 +26,6 @@ The dataset evaluates car health based on factors such as:
 * **Tyre Wear**
 * **HVAC Condition**
 * **Service History**
-  (Or whichever features your dataset includes)
 
 ---
 
@@ -48,14 +47,14 @@ The dataset evaluates car health based on factors such as:
 
 * Removed missing or inconsistent entries
 * Converted categorical data
-* Normalized/Standardized values if needed
+* Normalized/Standardized values **if needed** (scaler = StandardScaler(),X_scaled = scaler.fit_transform(X))
 
 ### **2️ Exploratory Data Analysis**
 
 * Distribution plots
 * Heatmaps
 * Feature correlation
-* Outlier inspection
+* Outlier inspection (Random forest = anomaly scores method)
 
 ### **3️ Model Building**
 
@@ -75,9 +74,10 @@ Advantages
 
 Evaluated using:
 
-* **Accuracy**
-* **Precision**
-* **Recall**
+* **Accuracy** (Overall correctness of the model)
+* **Precision** (correctly predicts the positive class)
+* **Recall** (actual positives classified correctly as positives)
+* **F1-score** (Balance between precision & recall)
 * **Confusion Matrix**
 
 ---
